@@ -1,6 +1,7 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import Link from "next/link";
+import Hero from "../components/Hero";
 import { trpc } from "../utils/trpc";
 
 const Home: NextPage = () => {
@@ -15,6 +16,7 @@ const Home: NextPage = () => {
       </Head>
 
       <main className="container mx-auto flex flex-col items-center justify-center min-h-screen p-4">
+        <Hero title="Welcome to Minos" description="Minos is an application that at this point serves no purpose. Please join us on our journey." image="https://mj-gallery.com/cc751fb9-dfc3-4070-898c-fd6b856da44d/grid_0.png" />
         <h1 className="text-5xl md:text-[5rem] leading-normal font-extrabold text-gray-700">
           Create <span className="text-purple-300">T3</span> App
         </h1>
