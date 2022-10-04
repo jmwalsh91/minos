@@ -5,6 +5,7 @@ type Props = {
   description: string;
 };
 
+
 function AboutCard({ title, description }: Props) {
   return (
 <div className="card w-96 bg-white text-primary-content border-black border-4 shadow-xl ">
