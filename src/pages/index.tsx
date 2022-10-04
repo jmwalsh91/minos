@@ -21,6 +21,7 @@ const Home: NextPage = () => {
           Create <span className="text-purple-300">T3</span> App
         </h1>
         <Link href="/about"><button className="bg-purple-600 border-x-blue p-3">about</button></Link>
+        <Link href="/about"><button className="bg-blue-600 border-x-blue p-3">Resources</button></Link>
         <p className="text-2xl text-gray-700">This stack uses:</p>
         <div className="grid gap-3 pt-3 mt-3 text-center md:grid-cols-2 lg:w-2/3">
           <TechnologyCard
