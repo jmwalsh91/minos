@@ -2,6 +2,7 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import Link from "next/link";
 import Hero from "../components/Hero";
+import Messenger from "../components/Messenger";
 import { trpc } from "../utils/trpc";
 
 const Home: NextPage = () => {
@@ -27,6 +28,7 @@ const Home: NextPage = () => {
         <div className="pt-6 text-2xl text-blue-500 flex justify-center items-center w-full">
           {hello.data ? <p>{hello.data.greeting}</p> : <p>Loading..</p>}
         </div>
+        <Messenger/>
       </main>
     </>
   );
@@ -57,6 +59,7 @@ const TechnologyCard = ({
       >
         Documentation
       </a>
+ 
     </section>
   );
 };
